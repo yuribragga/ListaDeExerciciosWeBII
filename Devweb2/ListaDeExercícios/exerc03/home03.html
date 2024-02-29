@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frete</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Calcular Frete</h1>
+    </header>
+    <section>
+        <div>
+            <p>Deseja Rastreamento? </br>
+                <label for="radioSim">Sim</label>
+                <input type="radio" name="radioRastreiamento" id="radioSim" >
+                <label for="radioNao">Não</label>
+                <input type="radio" name="radioRastreiamento" id="radioNao" >
+            </p>
+            <p>De qual a região?</br>
+                <label for="radioSul">Sul</label>
+                <input type="radio" name="radioRegiao" id="radioSul" >
+                <label for="radioSudeste">Sudeste</label>
+                <input type="radio" name="radioRegiao" id="radioSudeste" >
+                <label for="radioCo">Centro-oeste</label>
+                <input type="radio" name="radioRegiao" id="radioCo" >
+            </p>
+            <p>Quantas peças serão transportadas?
+                <input type="number" name="pecasNumber" id="pecasNumber" >
+            </p>
+            <p>Qual a distância em quilômetros?
+                <input type="number" name="pecasKm" id="pecasKm" >
+            </p>
+            <button class="botao" onclick="calcula()">Calcular</button>
+        </div>
+        <div id="resultado">
+
+        </div>
+    </section>
+    <footer>
+        <p></p>
+    </footer>
+</body>
+</html>
