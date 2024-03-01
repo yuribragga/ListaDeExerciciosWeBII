@@ -91,4 +91,6 @@ function mostraResultado() {
     document.body.appendChild(resultadoDiv);
     resultadoDiv.style.fontFamily = 'Arial'
 }
-mostraResultado()
+document.addEventListener("DOMContentLoaded", function() {
+    mostraResultado();
+});
