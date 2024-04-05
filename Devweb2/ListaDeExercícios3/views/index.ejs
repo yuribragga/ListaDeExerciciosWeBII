@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Pedidos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Pedidos</h1>
+    <ul>
+        <% pedidos.forEach(function(pedido) { %>
+            <li>
+                <strong>ID do Pedido:</strong> <%= pedido.ID %><br>
+                <strong>Nome do Cliente:</strong> <%= pedido.NOME %><br>
+                <strong>Produto:</strong> <%= pedido.PRODUTO %><br>
+                <strong>Quantidade:</strong> <%= pedido.QUANTIDADE %><br>
+                <strong>Total:</strong> <%= pedido.TOTAL %><br>
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>
