@@ -46,6 +46,8 @@ function ListagemClientes() {
       setShowVisualizarModal(true)
     }
 
+    window.location.reload();
+
     return (
         <div className="clientes-lista">
           {clientes.length > 0 ? (

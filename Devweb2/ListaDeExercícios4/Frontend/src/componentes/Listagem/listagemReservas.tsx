@@ -48,6 +48,8 @@ function ListagemReservas() {
       setShowVisualizarModal(true)
     }
 
+    window.location.reload();
+
     return (
         <div className="reservas-lista">
           {reservas.length > 0 ? (

@@ -26,6 +26,7 @@ function ListagemHoteis() {
         }
         fetchListaHotel();
     }, []);
+    window.location.reload();
 
     return (
         <div className="hotel-lista">
