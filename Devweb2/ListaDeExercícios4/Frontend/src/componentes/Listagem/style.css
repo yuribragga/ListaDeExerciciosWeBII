@@ -1,0 +1,79 @@
+.clientes-lista {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cliente-item {
+    display: flex;
+
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 2%;
+    margin: 10px;
+    width: 100vw;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+.restaurante-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+.reservas-lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+.reserva-item{
+    display: flex;
+
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 2%;
+    margin: 10px;
+    width: 100vw;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+.reservasSelecionar{
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    flex-grow: 1;
+}
+
+.hotel-item{
+    display: flex;
+
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 2%;
+    margin: 100px;
+    width: 100vw;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+.cliente-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+ 
+.clientesSelecionar {
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    flex-grow: 1;
+}
+.hotelSelecionar{
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    flex-grow: 1;
+}
+.editar,
+.deletar {
+    flex-shrink: 0;  
+   margin-left: 1em;
+}
