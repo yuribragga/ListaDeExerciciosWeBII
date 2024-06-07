@@ -15,6 +15,7 @@ function ListagemHoteis() {
                 const resultado = await listaHoteis();
                 if (resultado) {
                     setHoteis(resultado.data.hoteis);
+
                 } else {
                     console.error("Erro ao listar hotéis");
                 }
@@ -26,7 +27,7 @@ function ListagemHoteis() {
         }
         fetchListaHotel();
     }, []);
-    window.location.reload();
+
 
     return (
         <div className="hotel-lista">
@@ -34,7 +35,7 @@ function ListagemHoteis() {
                 <p>Carregando...</p>
             ) : hoteis.length > 0 ? (
                 hoteis.map((hotel) => (
-                    <Card key={hotel.hotel_id}style={{ width: '18rem', marginBottom: '10px', margin: '1rem', display:'inline', padding:'1px' }}>
+                    <Card key={hotel.hotel_id}style={{ width: '18rem', marginBottom: '10px', margin: '1rem', display:'inline', padding:'10px' }}>
                         <Card.Header>{hotel.hotel_nome}</Card.Header>
                         <Card.Body>
                             <Card.Text>

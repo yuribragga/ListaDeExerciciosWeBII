@@ -22,6 +22,7 @@ function ListagemReservas() {
                 const resultado = await listaReservas();
                 if (resultado) {
                     setReservas(resultado.data.reservas);
+                
                 } else {
                     console.error("Erro ao listar reservas");
                 }
@@ -47,8 +48,6 @@ function ListagemReservas() {
       setreservaId(reservaId)
       setShowVisualizarModal(true)
     }
-
-    window.location.reload();
 
     return (
         <div className="reservas-lista">

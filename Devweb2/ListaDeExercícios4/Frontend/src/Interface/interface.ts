@@ -30,6 +30,7 @@ export interface IReadReserva{
     res_horario: string
     cli_id: number
     hotel_id: number
+    cli_nome: string
 }
 export interface IReadReserva2{
     hotel_id: number;
